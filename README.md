@@ -3,12 +3,12 @@
 ### Meeting Notes 5/25/2020
 
 **County of Los Angeles Open Data Source**
-Dataset #1: https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-INSPECTIO/6ni6-h5kp
-Dataset #2: https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-VIOLATION/8jyd-4pv9
+* Dataset #1: https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-INSPECTIO/6ni6-h5kp
+* Dataset #2: https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-VIOLATION/8jyd-4pv9
 
 **Additional Resources**
-Reference Guide for the Food Official Inspection Report
-http://www.publichealth.lacounty.gov/eh/docs/RefGuideFoodInspectionReport.pdf
+* Reference Guide for the Food Official Inspection Report
+* Link: http://www.publichealth.lacounty.gov/eh/docs/RefGuideFoodInspectionReport.pdf
 
 **Questions we want answered:**
 1. If it's a chain restaurant (e.g., fast food), is there a chance of a health violation?
