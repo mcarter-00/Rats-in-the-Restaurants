@@ -1,5 +1,5 @@
-# Rats-in-the-Restaurants
-#Initial findings for inspections data set:
+## Rats-in-the-Restaurants
+# Initial findings for inspections data set:
 - the initial inspections data set has 210,427 rows × 20 columns
 - from this whole list it is possible to see different Program Descriptions as Food Market wholesale, food Mkt retail, cater, care food, food vehicle, food processing wholesale, and restaurants
 
@@ -15,7 +15,7 @@
 
 - this list has 171,862 uniques Serial Numbers (after keeping only restaurants) -> each line is a unique serial number
 
-#Initial findings for validation data set:
+# Initial findings for validation data set:
 - the initial validation data set has 971,331 rows × 4 columns
 - there are no nulls values 
 - analysing the frequency distribution plot we can see that the majority of the points are lower than 2
@@ -25,7 +25,7 @@
 
 -> to discuss: what join should we do?
 
-#exploring inspection dataset steps
+# exploring inspection dataset steps
 1) import inspection dataset and create a dataframe (210427 rows × 20 columns)
 2) loop through each column, check if there are null values
 3) understand data type
@@ -38,7 +38,7 @@
 10) count PROGRAM NAME value
 11) count SERIAL NUMBER VALUE
 
-#exploring violation dataset steps
+# exploring violation dataset steps
 1) import violation dataset and create a dataframe (971331 rows × 4 columns)
 2) loop through each column, check if there are null values
 3) understand data type
