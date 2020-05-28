@@ -4,7 +4,7 @@
 
 Health inspections occur for the safety of the public to keep restaurants up to date with health codes.  Health violations such as rats found in restaurants is one type of violation code that would lower the grade of the restaurant.  This analysis will help determine which restaurants are prone to more health violations, based on location in Los Angeles County.  
 
-## Data Source
+## Resources
 
 1) Los Angeles County Open Source
 - Inspections: https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-INSPECTIO/6ni6-h5kp
