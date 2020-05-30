@@ -17,4 +17,4 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 ## Features and Target
 
 ## Contribution
-My contribution was to create a presentation that represents and deliver our project.  Also, while merging the dataframes, there were nulls that could not be merged due to diffeerent location names.  To resolve this issue, I clustered the cities with the closest city and similar background i.e. wealth, style, demographic.
+My contribution was to create a presentation (Google Slides) that represents and deliver our project.  Also, while merging the dataframes, there were nulls that could not be merged due to diffeerent location names.  To resolve this issue, I clustered the cities with the closest city and similar background i.e. wealth, style, demographic.
