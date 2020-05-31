@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Rats in the Restaurants
 
@@ -91,3 +92,5 @@ Input data (Features):
 
 ## Dashboard
 In addition to using Tableau for a fully functioning and interactive dashboard; tableau public server will be used to share it.
+=======
+>>>>>>> b4d8fe05ea37fe6bd21bc8690dd4899b22e31257
