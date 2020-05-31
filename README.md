@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<<<<<
 
 # Rats in the Restaurants
 
@@ -19,6 +19,14 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 - Languages: Python 3.7
 - Machine Learning Libraries: SciKitLearn
 
+4) Communication
+- Team 5 is meeting 3-4 times a week to discuss and work on the project
+    - Square Role: Esther
+    - Triangle Role: Maria
+    - Circle Role: Julie
+    - X Role: Daniela
+- Primarily use Zoom, Slack, MIRO (to keep on track), and GitHub 
+
 ## ETL
 1) Extract
 - Extracted datasets(inspections, violations, and health community) as CSV from Los Angeles County Open Source
@@ -26,11 +34,12 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 2) Transform
 - Data Cleaning and Analysis
     - Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
-    - Filled
+    - Filled in missing data
+    - Normalized data
 - Database Storage
-PostgresSQL is the database we intend to use, and we will integrate SQLalchemy to connect back to Jupyter Notebook.
+    - PostgresSQL is the database we intend to use, and we will integrate SQLalchemy to connect back to Jupyter Notebook.
 - Machine Learning
-SciKitLearn is the ML library we'll be using to create a classifier. 
+    - SciKitLearn is the ML library we'll be using to create a classifier. 
 
 ML steps: 
 1) Confirm there are no null value or duplicated value in data set
@@ -91,6 +100,7 @@ Input data (Features):
 
 
 ## Dashboard
-In addition to using Tableau for a fully functioning and interactive dashboard; tableau public server will be used to share it.
+
+In addition to using Tableau for a fully functioning and interactive dashboard; Tableau Public Server will be used to share it.
 =======
->>>>>>> b4d8fe05ea37fe6bd21bc8690dd4899b22e31257
+>>>>>>>
