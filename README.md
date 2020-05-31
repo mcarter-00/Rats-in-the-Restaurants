@@ -1,2 +1,1 @@
-# Rats-in-the-Restaurants
 
