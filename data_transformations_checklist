@@ -1,0 +1,46 @@
+DATA TRANSFORMATIONS//CHECKLIST:
+
+**inspections_df** clean up in python
+- [DONE] filter by restaurants only
+- [DONE] get 'no. of seats', 'risk', and 'type' from 'pe_description' columns
+- [DONE] get 'lat' & 'lng' from 'location' column
+- [DONE] clean 'facility zip' to five digits
+- [DONE] drop columns as discussed
+- OUTPUT #1: clean_inspections.csv
+
+
+**violations_df** clean up in python
+- no cleaning needed
+- no dropping columns needed
+
+
+**inspections_violations_df** clean up in python
+- [DONE] merge 'inspections_df' and 'violations_df' on 'serial_number'
+- OUTPUT #2: clean_inspections_violations.csv
+
+
+**community_health_df** clean up in python
+- [DONE] change 'GEONAME' to uppercase
+- [DONE] replace '**' and '-' with '0' as discussed
+- [DONE] drop columns as discussed
+
+[status] new_community_health_df
+
+
+
+---
+NEXT STEPS:
+- address null values in 'LAT' and 'LNG' columns in 'clean_inspections.csv'
+- review 'Facility City' so that it can match with'GEONAME'
+- merge inspections_violations_df with community_health_df ???
+- review Yelp Data!
+- ensure correct data types & structures to successfully load into PostgresSQL
+    * change data types:
+        * activity date
+        * facility id
+        * more...
+        
+
+SQL TRANSFORMATION:
+- in SQL, join tables
+- in SQL, create tables for Machine Learning 
