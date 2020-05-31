@@ -46,4 +46,29 @@ The location column in the Inspections dataframe was split to extract the longit
 
 The pe_description column in the Inspections dataframe was split and create new columns with the split data in order to isolate the Number of Seats, a feature that we absolutely wanted.
 
+Example of a format for the ETL process
+## Steps Taken in the ETL Process
 
+1. Inspected the data to determine any problems that may need to be addressed int the transformation process.
+
+2.  Filled in missing data
+	- substituted data from another data frame that had good data
+	- interpolated between existing data points
+	- extrapolated from existing data
+
+3. Normalized the data
+	- reshaped the data
+	- converted data types
+	- parsed text data to the correct format
+	- split columns using regex
+
+Used during entire transformation process:
+
+	- list comprehensions to filter data
+	- created functions to perform the cleaning process
+	- lambda functions
+	- regular expressions, regex
+	- parsing
+	- histogram
+	- scatter plots
+	- connected pandas to a SQL database by creating a Database engine
