@@ -1,6 +1,6 @@
 # Rats in the Restaurants
 
----
+
 # Tasks completed this week:
 * initial data cleaning on inspections dataset, violations dataset, community health dataset
 * merged inspections and violations datasets
