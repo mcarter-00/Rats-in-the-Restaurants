@@ -42,6 +42,7 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 ## Machine Learning
 - Machine Learning
     - SciKitLearn is the ML library we'll be using to create a classifier. 
+
 ML steps: 
 1) Confirm there are no null value or duplicated value in data set
 2) Separate the features from the target
@@ -53,8 +54,7 @@ ML steps:
 8) Plot predictions
 9) Examine the model 
 
-
-Output data (target): 
+Output data (Target): 
 - Score
 
 Input data (Features):
