@@ -1,5 +1,3 @@
-<<<<<<<
-
 # Rats in the Restaurants
 
 ## Project Overview
@@ -28,19 +26,22 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 - Primarily use Zoom, Slack, MIRO (to keep on track), and GitHub 
 
 ## ETL
-1) Extract
+1) EXTRACT
 - Extracted datasets(inspections, violations, and health community) as CSV from Los Angeles County Open Source
 
-2) Transform
+2) TRANSFORM
 - Data Cleaning and Analysis
     - Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
     - Filled in missing data
     - Normalized data
+
+3) LOAD 
 - Database Storage
     - PostgresSQL is the database we intend to use, and we will integrate SQLalchemy to connect back to Jupyter Notebook.
+
+## Machine Learning
 - Machine Learning
     - SciKitLearn is the ML library we'll be using to create a classifier. 
-
 ML steps: 
 1) Confirm there are no null value or duplicated value in data set
 2) Separate the features from the target
@@ -99,8 +100,7 @@ Input data (Features):
     - Proportion of adults (> 18 years) who used marijuana (Prop_marj)
 
 
+
 ## Dashboard
 
 In addition to using Tableau for a fully functioning and interactive dashboard; Tableau Public Server will be used to share it.
-=======
->>>>>>>
