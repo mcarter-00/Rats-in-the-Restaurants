@@ -23,7 +23,7 @@ Health inspections occur for the safety of the public to keep restaurants up to 
     - Triangle Role: Maria
     - Circle Role: Julie
     - X Role: Daniela
-- Although roles were given based on shape, each member shared the roles and worked on together throughout the project(TEAMWORK)
+- Although roles were given based on shape, each member shared all roles and worked on together throughout the project(TEAMWORK)
 - Primarily use Zoom, Slack, MIRO (to keep on track), and GitHub 
 
 ## ETL
