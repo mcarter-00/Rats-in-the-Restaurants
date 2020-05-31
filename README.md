@@ -14,7 +14,7 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 2) Google Slides
 - https://docs.google.com/presentation/d/1fONfWnvPUPYfaIGxkxsvcScwwaHlTBpz2CZawL7Ysrw/edit?usp=sharing
 
-## Features and Target
-
-## Contribution
-My contribution was to create a presentation (Google Slides) that represents and deliver our project.  Also, while merging the dataframes, there were nulls that could not be merged due to diffeerent location names.  To resolve this issue, I clustered the cities with the closest city and similar background i.e. wealth, style, demographic.
+3) Software
+- Software/Toolkit: Visual Studio Code 1.39.0, Jupyter Notebook 6.0.3, SQLAlchemy 1.3.9, PostgresSQL
+- Languages: Python 3.7
+- Machine Learning Libraries: SciKitLearn
