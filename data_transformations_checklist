@@ -28,14 +28,10 @@ NEXT STEPS:
 
 PYTHON
 * Data cleaning in Python:
-    - 'inspections' (use 'clean_inspections.csv')
-        * address null values in 'LAT' and 'LNG' 
-        * address null values in 'GRADE"
-    - 'community health' (use 'new_community_health_df')
-        * change data type of 'GEONAME'
-    - 'violations'
-        * copy & paste cleaning from SQL_ML notebook then data cleaning is DONE! 
-    - ensure correct data types & structures across the 3 datasets
+    - [DONE] 'inspections'
+    - [DONE] 'violations'
+    - [DONE] 'community health' 
+    - [DONE] ensure no nulls and correct data types across the 3 datasets
     - Final datasets:
             -- clean_inspections.csv
             -- clean_violations.csv
@@ -49,6 +45,7 @@ SQL
     - clean_violations.csv
     - clean_community_health.csv
 * Merging/joining of datasets to take place in SQL
+    - Any additional merging/joining?
     - Final SQL dataset: 
         -- inspections_violations_communityhealth.csv for Machine Learning
 
