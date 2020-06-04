@@ -4,3 +4,7 @@ config.py
 # Ignore jupyter notebook checkpoints
 ./__pycache__
 
+
+*.csv
+data
+temp
