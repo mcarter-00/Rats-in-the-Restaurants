@@ -1,2 +1,11 @@
+<<<<<<< HEAD
 .DS_Store
 config2.py
+=======
+# Ignore my config file
+config.py
+
+# Ignore jupyter notebook checkpoints
+./__pycache__
+
+>>>>>>> eb133cbd3bd27534447f019e13b4c87a7def2290

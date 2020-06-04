@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rats-in-the-Restaurants
 
 Week 1 Assignment
@@ -72,3 +73,5 @@ Used during entire transformation process:
 	- histogram
 	- scatter plots
 	- connected pandas to a SQL database by creating a Database engine
+=======
+>>>>>>> eb133cbd3bd27534447f019e13b4c87a7def2290
