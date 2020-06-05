@@ -3,4 +3,11 @@ config.py
 
 # Ignore jupyter notebook checkpoints
 ./__pycache__
+.ipynb_checkpoints
 
+
+*.csv
+data
+temp
+
+.gitignore
