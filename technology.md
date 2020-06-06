@@ -14,14 +14,14 @@ SciKitLearn is the ML library we'll be using to create a classifier.
 
 ML steps: 
 1) Our first step is to makesure we don't have any null value or duplicated value to our data set
-2) After that we will separate our futures from the target
+2) After that we will separate our features from the target
 3) Third step is to convert string from feature columns to numerical, if necessary (encoding)
 4) Split the data into training and testing
 5) Build classifier/model - Our training and testing setup will be Linear Regression. 
 6) Fit the model 
 7) Generate predictions 
 8) Plot predictions
-9) Examing our model 
+9) Exame our model 
 
 
 Output data (target): 
