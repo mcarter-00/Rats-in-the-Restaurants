@@ -1,6 +1,0 @@
-# Ignore my config file
-config.py
-
-# Ignore jupyter notebook checkpoints
-__pycache__
-
