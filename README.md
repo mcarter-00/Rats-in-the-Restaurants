@@ -82,22 +82,17 @@ We took several data transformation and preprocessing steps upon continuous data
         * dropping columns consisting of categorical data
 
 ### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
-We conducted linear regression analysis to assess a restaurant's "score" versus each potential feature selection (n=43). The analysis
-included determining p-values and r-values to better understand significance and correlations among our data. This process helped
-inform our feature selection. 
+We conducted linear regression analysis to assess a restaurant's "score" versus each potential feature selection (n=43). The analysis included determining p-values and r-values to better understand significance and correlations among our data. This process helped inform our feature selection. 
 
 ### Description of how data was split into training and testing sets
-We attempted to use an linear SVC model where we selected our y-values to be "SCORE" and x-values to be the remaining numerical 
-features (n=43). We separated our data into training and testing set that included the parameters:
+We attempted to use an linear SVC model where we selected our y-values to be "SCORE" and x-values to be the remaining numerical features (n=43). We separated our data into training and testing set that included the parameters:
     * random state = 42  
     * stratisfy = "Y"
 
+However, this will need to be reviewed.    
+
 ### Explanation of model choice, including limitations and benefits
-The linear SVC model presented several limitations. Running our model took a couple of hours to complete, and it resulted in a very 
-low accuracy score (about 6%). Upon discussing and re-evaluting our model, we decided on reducing our feature selections to about handful
-based on the highest r-values from our linear regression analysis and limiting restaurants to Los Angeles city only. We tested this approach
-on a random forest model, which still procuded a low accuracy score. We reverted back to keeping all our feature selections and keeping all
-cities in Los Angeles County. Our random forest model then produced an accuracy score of about 70%.
+The linear SVC model presented several limitations. Running our model took a couple of hours to complete, and it resulted in a very low accuracy score (about 6%). Upon discussing and re-evaluting our model, we decided on reducing our feature selections to about handful based on the highest r-values from our linear regression analysis and limiting restaurants to Los Angeles city only. We tested this approachon a random forest model, which still procuded a low accuracy score. We reverted back to keeping all our feature selections and keeping all cities in Los Angeles County. Our random forest model then produced an accuracy score of about 70%.
 
 ## Dashboard
 
