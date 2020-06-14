@@ -9,5 +9,7 @@ config.py
 *.csv
 data
 temp
-
+bin
+debug
+obj
 .gitignore
