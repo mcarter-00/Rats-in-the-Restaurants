@@ -10,3 +10,4 @@ The dashboards will follow the below storyline:
 2) Dashboards will deepdive into 6 violations that would mostly impact people's decisions on choosing a restaurant. This dashboard will map where restaurants with this type of violations are located, their grade, their size, etc. This dashboard will be interactive, and it will be possible to filter by grade and type of violation
 3) The last part of the story is to see if Los Angeles demographic dataset could bring any additional information about the zipcodes with worst scores presenting the one of the 6 violations.
 
+The interative dashboard will allow to filter by grade and violations.
