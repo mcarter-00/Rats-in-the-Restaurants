@@ -62,7 +62,7 @@ Between public.inspection2 and violations, our primary key is "serial_number."  
     SVC Model  
     <img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/ML_Screenshots/LinearSVC_ML_Results.png"> 
 
-# Description of preliminary data preprocessing 
+### Description of preliminary data preprocessing 
 We took several data transformation and preprocessing steps upon continuous data exploration and analysis. They were broken down into the following parts.
 
     Part one of the data preprocessing included:
@@ -81,18 +81,18 @@ We took several data transformation and preprocessing steps upon continuous data
         * setting facility city = "Los Angeles, City of"
         * dropping columns consisting of categorical data
 
-# Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
+### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
 We conducted linear regression analysis to assess a restaurant's "score" versus each potential feature selection (n=43). The analysis
 included determining p-values and r-values to better understand significance and correlations among our data. This process helped
 inform our feature selection. 
 
-# Description of how data was split into training and testing sets
+### Description of how data was split into training and testing sets
 We attempted to use an linear SVC model where we selected our y-values to be "SCORE" and x-values to be the remaining numerical 
 features (n=43). We separated our data into training and testing set that included the parameters:
     * random state = 42  
     * stratisfy = "Y"
 
-# Explanation of model choice, including limitations and benefits
+### Explanation of model choice, including limitations and benefits
 The linear SVC model presented several limitations. Running our model took a couple of hours to complete, and it resulted in a very 
 low accuracy score (about 6%). Upon discussing and re-evaluting our model, we decided on reducing our feature selections to about handful
 based on the highest r-values from our linear regression analysis and limiting restaurants to Los Angeles city only. We tested this approach
