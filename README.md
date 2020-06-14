@@ -54,10 +54,10 @@ Between public.inspection2 and violations, our primary key is "serial_number."  
 
 ## Machine Learning
 - Machine Learning
-    - Used multiple machine learning (i.e. PCA, SVM, SVC, Linear Regression) and finalized with Random Forest as it processed the best results(60% accuracy compared to 8% with SVC)
+    - Used multiple machine learning (i.e. PCA, SVM, SVC, Linear Regression) and finalized with Random Forest as it processed the best results(65% accuracy compared to 8% with SVC)
     
     Random Forest Model
-    (ADD SCREENSHOT OF RANDOM FOREST of 60% from Daniela)
+    <img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/Esther-Branch/ML_Screenshots/Random_Forest.png"> 
 
     SVC Model  
     <img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/ML_Screenshots/LinearSVC_ML_Results.png"> 
