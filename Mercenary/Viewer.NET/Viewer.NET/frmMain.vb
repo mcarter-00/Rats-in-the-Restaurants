@@ -7,6 +7,7 @@ Public Class frmMain
     'Dim sDataFiltered() As String
     Dim sListData As List(Of String)
     Dim sListValues As New List(Of String)
+    Dim sListDataFilter As List(Of String)
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.txtFileData.Text = "clean_inspections.csv"
@@ -35,6 +36,7 @@ Public Class frmMain
         Me.lblValues.Text = "Column Value: " & sListValues.Count
 
         sListData = New List(Of String)
+        sListDataFilter = New List(Of String)
         lstSummaryView.Clear()
         lstSummaryView.Columns.Add(Me.cboColumnName.Text, 100, HorizontalAlignment.Left)
         lstSummaryView.Columns.Add("Count", 80, HorizontalAlignment.Left)
@@ -50,13 +52,22 @@ Public Class frmMain
             cboColumnValue.Items.Add(sValue)
             GetFilteredData(Me.cboColumnName.Text, sValue, sListData)
             GetStatisticsData(sListData, {"GRADE"}, dStats)
-            sListTemp = New List(Of String)
-            sListTemp.Add(sValue)
+            If Me.chkTable.Checked Then
+                sListTemp = New List(Of String)
+                sListTemp.Add(sValue)
+            End If
+            Dim sOutput As String = ""
+            sOutput += sValue
             For iIdx = 1 To dStats.GetUpperBound(1) + 1
-                sListTemp.Add(Format(dStats(0, iIdx - 1), "0.####"))
+                If Me.chkTable.Checked Then
+                    sListTemp.Add(Format(dStats(0, iIdx - 1), "0.####"))
+                End If
+                sOutput += "," & Format(dStats(0, iIdx - 1), "0.####")
             Next
-            Dim lstViewItem As ListViewItem = New ListViewItem(sListTemp.ToArray)
-            lstSummaryView.Items.Add(lstViewItem)
+
+            'Dim lstViewItem As ListViewItem = New ListViewItem(sListTemp.ToArray)
+            'lstSummaryView.Items.Add(lstViewItem)
+            sListDataFilter.Add(sOutput)
         Next
 
 
@@ -86,36 +97,60 @@ Public Class frmMain
         End Try
     End Sub
 
-    Private Sub cmdWriteData_Click(sender As Object, e As EventArgs) Handles cmdWriteData.Click
+    Private Sub cmdWriteData_Click(sender As Object, e As EventArgs) Handles cmdWriteDataListView.Click
         Try
             'For Each sValue As String In sListValues
             '    GetFilteredData(Me.cboColumnName.Text, sValue, sListData)
             'Next
-            Using LVStream As New IO.StreamWriter(String.Format("Summary_{0}.CSV", Me.cboColumnName.Text))
-                Dim sTemp As String = ""
-                For Each colName As ColumnHeader In Me.lstSummaryView.Columns
+            If Me.chkTable.Checked Then
 
-                    sTemp &= colName.Text & ","
-                Next
-                sTemp = sTemp.Remove(sTemp.Length - 1, 1)
-                LVStream.WriteLine(sTemp)
-                For Each LVi As ListViewItem In Me.lstSummaryView.Items
-                    Dim LVRow As String = ""
-                    For Each LVCell As ListViewItem.ListViewSubItem _
-                            In LVi.SubItems
+                Using LVStream As New IO.StreamWriter(String.Format("Summary_{0}.CSV", Me.cboColumnName.Text))
+                    Dim sTemp As String = ""
+                    For Each colName As ColumnHeader In Me.lstSummaryView.Columns
 
-                        LVRow &= LVCell.Text & ","
+                        sTemp &= colName.Text & ","
                     Next
-                    LVRow = LVRow.Remove(LVRow.Length - 1, 1)
-                    LVStream.WriteLine(LVRow)
+                    sTemp = sTemp.Remove(sTemp.Length - 1, 1)
+                    LVStream.WriteLine(sTemp)
+                    For Each LVi As ListViewItem In Me.lstSummaryView.Items
+                        Dim LVRow As String = ""
+                        For Each LVCell As ListViewItem.ListViewSubItem _
+                                In LVi.SubItems
 
-                Next
-            End Using
+                            LVRow &= LVCell.Text & ","
+                        Next
+                        LVRow = LVRow.Remove(LVRow.Length - 1, 1)
+                        LVStream.WriteLine(LVRow)
 
+                    Next
+                End Using
+            Else
+                Using LVStream As New IO.StreamWriter(String.Format("Summary_{0}.CSV", Me.cboColumnName.Text))
+                    Dim sTemp As String = ""
+                    'For Each colName As ColumnHeader In Me.lstSummaryView.Columns
+
+                    '    sTemp &= colName.Text & ","
+                    'Next
+                    'sTemp = sTemp.Remove(sTemp.Length - 1, 1)
+                    'LVStream.WriteLine(sTemp)
+                    'For Each LVi As ListViewItem In Me.lstSummaryView.Items
+                    For Each sOutput In sListDataFilter
+                        Dim LVRow As String = ""
+                        'For Each LVCell As ListViewItem.ListViewSubItem _
+                        '        In LVi.SubItems
+
+                        '    LVRow &= LVCell.Text & ","
+                        'Next
+                        'LVRow = LVRow.Remove(LVRow.Length - 1, 1)
+                        LVStream.WriteLine(sOutput)
+                    Next
+                End Using
+            End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
 End Class
 
 Module Functions
