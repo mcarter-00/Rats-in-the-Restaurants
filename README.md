@@ -62,37 +62,41 @@ Between public.inspection2 and violations, our primary key is "serial_number."  
     SVC Model  
     <img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/ML_Screenshots/LinearSVC_ML_Results.png"> 
 
-### Description of preliminary data preprocessing 
+### Description of Preliminary Data Preprocessing 
 We took several data transformation and preprocessing steps upon continuous data exploration and analysis. They were broken down into the following parts.
 
     Part one of the data preprocessing included:
         * abstracting only restaurants, coordinates, and seats numbers
         * dropping unwanted columns, renaming kept columns
         * changing data types
-        * replacing null values with appropiate values
+        * replacing null values with appropriate values
     Part two of the data preprocessing included:
         * replacing missed null values
-        * dropping unwated columns
+        * dropping unwanted columns
     Part three of the data preprocessing included:
         * modifying "Activity Date" to include "MONTH-YEAR" and "MONTH" columns
         * creating a new column from 'SEATS' into 'new_seats' that represents "seat bins"
-        * dropping unwated columns
+        * dropping unwanted columns
     Part four of the data preprocessing included:
         * setting facility city = "Los Angeles, City of"
         * dropping columns consisting of categorical data
 
 ### Description of preliminary feature engineering and preliminary feature selection, including their decision-making process
-We conducted linear regression analysis to assess a restaurant's "score" versus each potential feature selection (n=43). The analysis included determining p-values and r-values to better understand significance and correlations among our data. This process helped inform our feature selection. 
+We conducted linear regression analysis to assess a restaurant's "score" versus each potential feature selection (n=43. The analysis included determining p-values and r-values to better understand significance and correlations among our data. This process helped inform our feature selection. 
 
 ### Description of how data was split into training and testing sets
-We attempted to use an linear SVC model where we selected our y-values to be "SCORE" and x-values to be the remaining numerical features (n=43). We separated our data into training and testing set that included the parameters:
-    * random state = 42  
-    * stratisfy = "Y"
+Our data was defined as:
+x = One of the 43 features 
+    [X = rats2_ml_df.copy()]
+    [X = X.drop("SCORE", axis=1)]
+y = "SCORE" 
+    [y = rats2_ml_df["SCORE"].ravel()]
 
-However, this will need to be reviewed.    
+We separated our data into training and testing sets that included the the parameters:
+    * X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 
 ### Explanation of model choice, including limitations and benefits
-The linear SVC model presented several limitations. Running our model took a couple of hours to complete, and it resulted in a very low accuracy score (about 6%). Upon discussing and re-evaluting our model, we decided on reducing our feature selections to about handful based on the highest r-values from our linear regression analysis and limiting restaurants to Los Angeles city only. We tested this approachon a random forest model, which still procuded a low accuracy score. We reverted back to keeping all our feature selections and keeping all cities in Los Angeles County. Our random forest model then produced an accuracy score of about 70%.
+The linear SVC model presented several limitations. Running our model took a couple of hours to complete, and it resulted in a very low accuracy score (about 6%). Upon discussing and re-evaluting our model, we decided on reducing our feature selections to about handful based on the strongest r-values from our linear regression analysis and limiting restaurants to Los Angeles city only. We tested this approach on a random forest model, which still procuded a low accuracy score. We reverted back to keeping all our feature selections and keeping all cities in Los Angeles County. Our random forest classifier included two parameters: n_estimators = 200 and random_state =78. Finally, our random forest model then produced an accuracy score of about 70%. Feature importance was calculated and sorted. It revealed that “LAT”, “LNG”, and “FACILITY_ZIP” were among the top. Although not strong, it still demonstrates an impact.
 
 ## Dashboard
 
