@@ -1,15 +1,3 @@
 # Ignore my config file
 config.py
-
-# Ignore jupyter notebook checkpoints
-./__pycache__
-.ipynb_checkpoints
-.vs
-
-*.csv
-data
-temp
-bin
-debug
-obj
-.gitignore
+config2.py

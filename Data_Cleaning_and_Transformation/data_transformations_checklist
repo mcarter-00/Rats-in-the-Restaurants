@@ -1,0 +1,55 @@
+DATA TRANSFORMATIONS//CHECKLIST:
+
+**inspections_df** clean up in python
+- [DONE] filter by restaurants only
+- [DONE] get 'no. of seats', 'risk', and 'type' from 'pe_description' columns
+- [DONE] get 'lat' & 'lng' from 'location' column
+- [DONE] clean 'facility zip' to five digits
+- [DONE] drop columns as discussed
+- OUTPUT #1: clean_inspections.csv
+
+**violations_df** clean up in python
+- no cleaning needed
+- no dropping columns needed
+
+**inspections_violations_df** clean up in python
+- [DONE] merge 'inspections_df' and 'violations_df' on 'serial_number'
+- OUTPUT #2: clean_inspections_violations.csv
+
+**community_health_df** clean up in python
+- [DONE] change 'GEONAME' to uppercase
+- [DONE] replace '**' and '-' with '0' as discussed
+- [DONE] drop columns as discussed
+
+[last df made] new_community_health_df
+
+---
+NEXT STEPS:
+
+PYTHON
+* Data cleaning in Python:
+    - [DONE] 'inspections'
+    - [DONE] 'violations'
+    - [DONE] 'community health' 
+    - [DONE] ensure no nulls and correct data types across the 3 datasets
+    - Final datasets:
+            -- clean_inspections.csv
+            -- clean_violations.csv
+            -- clean_community_health.csv
+
+SQL
+* Data cleaning in SQL:
+    - review 'Facility City' from 'clean_inspections.csv' so that it can match with'GEONAME' from 'clean_communityhealth.csv'
+* Use the 3 clean datasets to create 3 tables:
+    - clean_inspections.csv
+    - clean_violations.csv
+    - clean_community_health.csv
+* Merging/joining of datasets to take place in SQL
+    - Any additional merging/joining?
+    - Final SQL dataset: 
+        -- inspections_violations_communityhealth.csv for Machine Learning
+
+NOTE: In SQL, keep clean_inspections as the master file (keep untouch), update community_health instead?
+
+API/JSON
+* Review Yelp Data for Tableau/visualizations!
