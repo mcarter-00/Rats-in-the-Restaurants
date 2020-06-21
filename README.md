@@ -40,23 +40,23 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 ## SQL
 - In SQL, we merged inspection.csv(public.inspection2) and violation.csv to create a final dataset.  Within the dataset, Facility_City names were replaced (i.e. "Malibu" to "Santa Monica") to correlate with closest distance to cities that were already placed in the inspection.csv.  
 
-<img width=“200” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Database/SQL_Screenshots/Screenshot_Joined_Table_SQL.png"> 
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Database/SQL_Screenshots/Screenshot_Joined_Table_SQL.png"> 
 
 
 ## ERD
 Between public.inspection2 and violations, our primary key is "serial_number."  That was used to merge the two datasets.
 
-<img width=“200” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Database/ERD.png"> 
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Database/ERD.png"> 
 
 ## Machine Learning
 - Machine Learning
     - Used multiple machine learning (i.e. PCA, SVM, SVC, Linear Regression) and finalized with Random Forest as it processed the best results(67% accuracy compared to 8% with SVC)
     
     Random Forest Model
-    <img width=“200” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Machine_Learning/ML_Screenshots/Random_Forest.png"> 
+    <img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Machine_Learning/ML_Screenshots/Random_Forest.png"> 
 
     SVC Model  
-    <img width=“200” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Machine_Learning/ML_Screenshots/LinearSVC_ML_Results.png"> 
+    <img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Machine_Learning/ML_Screenshots/LinearSVC_ML_Results.png"> 
 
 ### Description of Preliminary Data Preprocessing 
 We took several data transformation and preprocessing steps upon continuous data exploration and analysis. They were broken down into the following parts.
@@ -98,10 +98,10 @@ The linear SVC model presented several limitations. Running our model took a cou
 
 Tableau is used for data visualization. 
 1) A dashboard that displays the importance level per health violation, city with most health violation, and grades given to restaurant per health violation from the initial analysis.
-<img width=“200” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Health_violations_per_city.png"> 
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Health_violations_per_city.png"> 
 
 2) An interactive dashboard that displays restaurants if selecting restaurant name, grade, size, and/or health violation.
-<img width=“200” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Interaction_dashboard.png"> 
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Interaction_dashboard.png"> 
 
 3) A dashboard that represents the importance level per feature from machine learning.
-<img width=“200” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Level_of_importance.png"> 
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Level_of_importance.png"> 
