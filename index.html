@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Rats in the Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    html, body { 
+      /* height: 100%; */
+      }
+
+      #mouse1 {
+      /* height: 50px; */
+      /* margin-top: 35px;
+      margin-bottom: 65px; */
+      animation-name:  goLeft;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+    }
+    img{
+      height: 6em;
+      
+      margin-left: 3em;
+    }
+    .preload * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
+}
+@-webkit-keyframes goLeft  {
+  {
+    right: -500%;
+    transform: translateX(0);
+  }
+  100% {
+    left: 0%%;
+    transform: translateX(300%);
+  }
+}
+
+    keyframes goLeft {
+    from {
+      -webkit-transform: translate(0,0);
+      margin-right: 100%;
+      width: 300%;
+    }
+
+    to {
+      -webkit-transform: translate(980px,0);
+      margin-left: 0%;
+      width: 25%;
+    }
+} 
+
+.description {
+padding: 1em;
+margin-top: 3em;
+margin-bottom: 1rem;
+}
+
+  </style>
+
+  </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" dropdown-menu-right>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item dropdownA">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Data Tables
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="right: auto; left: auto;">
+                <a class="dropdown-item" href="datatable1.html">Table 1</a>
+                <a class="dropdown-item" href="datatable2.html">Table 2</a>
+              </div>
+            </li> -->
+            <li class="nav-item dropdownB">
+              <a class="nav-link dropdown-toggle" href="dashboard1.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dashboards
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="right: auto; left: auto;">
+                <a class="dropdown-item" href="dashboard1.html">Dashboard 1</a>
+                <a class="dropdown-item" href="dashboard2.html">Dashboard 2</a>
+              </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-1">Rats in the Restaurant?</h1>
+    <p class="lead"> </p>
+
+      <div class="preload" id="mouse1"></div>
+
+    <hr class="my-2">
+    <p></p>
+    <p class="lead">
+    Project Description
+    </p>
+
+    <p>
+      According to the Centers for Disease Control and Prevention, 1 in 6 Americans (or 48 million people) get sick from a foodborne disease, 128,000 get hospitalized, and 3,000 are killed each year. About half of foodborne-disease outbreaks occur at restaurants and commercial eating establishments. 
+
+    </p>
+    <p>
+      Los Angeles County instituted the letter grade system to more than 25,000 restaurants and conducts nearly 50,000 restaurant inspections each year. 
+    </p>
+    <p>
+      Dashboards can be accesseed in the top navigation bar
+    </p>
+    
+  </div>
+
+  
+</div>
+
+  
+<div class="wrapper">
+
+  <div class="container">
+    <div class="row">
+      <footer class="footer">
+  
+        <span class="text-muted">© 2020 Copyright:
+         
+          <a href=""><img src ="Misc/images/m_legs.svg" height="20px" width="20px" alt="rats">Ladies Night</a></span>
+      
+      </footer>
+            
+   
+    </div>
+  </div>
+  
+
+<script>
+
+
+  var mouseyImages = ['Misc/images/m_da.svg', 'Misc/images/m_legs.svg', 'Misc/images/m_sleep.png', 'Misc/images/m_up.svg', 'Misc/images/m_sv.svg', 'Misc/images/m_ls.svg' ];
+  let mouseyDiv = document.getElementById('mouse1');
+  var arrayLength = mouseyImages.length;
+  for (let i=1; i<arrayLength; i++) {
+    
+      setTimeout( function timer(){
+        mouseyDiv.innerHTML += '<img src=\"'+mouseyImages[i]+'\"  >';
+      }, i*1500 );
+
+
+
+
+}
+// $(window).on("load", function(){
+//     // '#yourElement' this is the id of the html element you want to animate.
+//     // you can also use any other selector as well.
+//     $('#mouse1').addClass('animate_mice');
+// });
+
+  // var playersBox = ['images/m_da.svg', 'images/m_legs.svg', 'images/m_sleep.png', 'images/m_up.svg', 'images/m_sv.svg', 'images/m_ls.svg' ];
+  // let playerContainer = document.getElementById('mouse1');
+  // for (var i = 0; i < playersBox.length; i++) {
+  //     playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\"  >';
+  //     // playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\">';
+  // }
+
+  // $("#mouse").delay(1000).animate({"opacity": "1"}, 700);
+  //     $(document ).ready(function() {
+  //   $("body").removeClass("preload");
+  // });
+</script>
+
+ </body>
+</html>
+<!-- <script>
+  var playersBox = ['images/m_da.svg', 'images/m_legs.svg', 'images/m_sleep.png', 'images/m_up.svg', 'images/m_sv.svg', 'images/m_ls.svg' ];
+  let playerContainer = document.getElementById('mouse1');
+  for (var i = 0; i < playersBox.length; i++) {
+      playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\"  >';
+      // playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\">';
+  }
+
+  $("#mouse").delay(1000).animate({"opacity": "1"}, 700);
+      $(document ).ready(function() {
+    $("body").removeClass("preload");
+  });
+</script> -->
+
