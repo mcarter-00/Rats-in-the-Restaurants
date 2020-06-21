@@ -17,50 +17,46 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 - Languages: Python 3.7
 - Machine Learning Libraries: SciKitLearn
 
-4) Communication
-- Team 5 is meeting 3-4 times a week to discuss and work on the project
-    - Square Role: Esther
-    - Triangle Role: Maria
-    - Circle Role: Julie
-    - X Role: Daniela
-    - $ Role: Dustin
-- Although roles were given based on shape, each member shared all roles and worked on together throughout the project(TEAMWORK)
-- Primarily use Zoom, Slack, MIRO (to keep on track), and GitHub 
-
 ## ETL
 1) EXTRACT
-- Extracted datasets(inspections, violations, and health community) as CSV from Los Angeles County Open Source
+- Extracted from Los Angeles County’s open data portal
+- Filtered to compare urban and suburban cities within Los Angeles County
+- Evaluated possible correlations between health violations, venue size, community health demographics
+- Explored if marijuana, alcohol consumption, and crime rate affect health violations
+
+
 
 2) TRANSFORM
-- Data Cleaning and Analysis
-    - Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
-    - Filled in missing data
-    - Normalized data
+- Extricated 1,000,000 rows and nearly 1,000 columns of feature rich and machine learning ready utilizing 6 programming libraries to munge, normalize, split and encode drawing from Los Angeles city and county publicly available information
+
 
 3) LOAD 
-- Database Storage
-    - PostgreSQL is the database we intend to use, and we will integrate SQLalchemy to connect back to Jupyter Notebook.
+- Loaded two data frames into tables using PostgreSQL
+- Normalized data in SQL
+- Joined tables and exported to .CSV for Machine Learning*
+- The reliability and easy accessibility is one of SQL’s main fortes, assuring the clean join for the machine learning phase
+
 
 ## SQL
 - In SQL, we merged inspection.csv(public.inspection2) and violation.csv to create a final dataset.  Within the dataset, Facility_City names were replaced (i.e. "Malibu" to "Santa Monica") to correlate with closest distance to cities that were already placed in the inspection.csv.  
 
-<img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/SQL_Screenshots/Screenshot_Joined_Table_SQL.png"> 
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Database/SQL_Screenshots/Screenshot_Joined_Table_SQL.png"> 
 
 
-### ERD
+## ERD
 Between public.inspection2 and violations, our primary key is "serial_number."  That was used to merge the two datasets.
 
-<img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/ERD.png"> 
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Database/ERD.png"> 
 
 ## Machine Learning
 - Machine Learning
     - Used multiple machine learning (i.e. PCA, SVM, SVC, Linear Regression) and finalized with Random Forest as it processed the best results(67% accuracy compared to 8% with SVC)
     
     Random Forest Model
-    <img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/Esther-Branch/ML_Screenshots/Random_Forest.png"> 
+    <img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Machine_Learning/ML_Screenshots/Random_Forest.png"> 
 
     SVC Model  
-    <img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/ML_Screenshots/LinearSVC_ML_Results.png"> 
+    <img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Machine_Learning/ML_Screenshots/LinearSVC_ML_Results.png"> 
 
 ### Description of Preliminary Data Preprocessing 
 We took several data transformation and preprocessing steps upon continuous data exploration and analysis. They were broken down into the following parts.
@@ -101,13 +97,11 @@ The linear SVC model presented several limitations. Running our model took a cou
 ## Dashboard
 
 Tableau is used for data visualization. 
-1) The first bar chart displays inspections vs city, with Los Angeles, City Of to have the most health violations per serial number. 
-2) The second bar chart displays inspections per facility.  Facilities that are presented are large chain restaurants and Subway has the most health violations in the Los Angeles County.  
-3) The third chart represents the amount of inspections per city of the specific program name (chain restaurant).
-<img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Dashboard%20prints/Screen%20Shot%202020-06-14%20at%2012.03.30%20AM.png"> 
+1) A dashboard that displays the importance level per health violation, city with most health violation, and grades given to restaurant per health violation from the initial analysis.
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Health_violations_per_city.png"> 
 
-4) A heat map was generated to display the regions per zipcode the average grades of restaurants.
-<img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Dashboard%20prints/Screen%20Shot%202020-06-14%20at%2012.05.13%20AM.png">
+2) An interactive dashboard that displays restaurants if selecting restaurant name, grade, size, and/or health violation.
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Interaction_dashboard.png"> 
 
-5) A tile chart displays health violations that are marked the most during health inspections. #44 Floors, wall,... is the highest marked violation.
-<img width=“400” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Dashboard%20prints/Screen%20Shot%202020-06-14%20at%2012.05.55%20AM.png"> 
+3) A dashboard that represents the importance level per feature from machine learning.
+<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Level_of_importance.png"> 
