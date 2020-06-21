@@ -4,7 +4,7 @@ config.py
 # Ignore jupyter notebook checkpoints
 ./__pycache__
 .ipynb_checkpoints
-
+.vs
 
 *.csv
 data
