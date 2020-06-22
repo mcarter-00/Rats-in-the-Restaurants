@@ -13,10 +13,11 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 
 3) Tableau Dashboard 
 - Interactive Map:[Link](https://public.tableau.com/profile/danigio#!/vizhome/Rats_interactivedashboard_2/RestaurantsinLAwithviolations)
-- Machine Learning Dashboard that displays the importance level per feature: [Link](https://public.tableau.com/profile/esther.kim4056#!/vizhome/Rats-in-the-RestaurantsHealthViolations/HealthViolationsperCity)
-- Initial Analysis Dashboard: [Link](https://public.tableau.com/profile/julie.al.huneidi#!/vizhome/PUBLISHED_EXPLORE_RATS/Violations_Per_Restaurant)
+- Machine Learning Dashboard that displays the importance level per feature: [Link](https://public.tableau.com/profile/danigio#!/vizhome/Rats_Analysis/Levelofimportance_dash)
+- Initial Analysis Dashboard: [Link] (https://public.tableau.com/profile/esther.kim4056#!/vizhome/Rats-in-the-RestaurantsHealthViolations/HealthViolationsperCity)
+- Health Violation Dashboard: [Link](https://public.tableau.com/profile/julie.al.huneidi#!/vizhome/PUBLISHED_EXPLORE_RATS/Violations_Per_Restaurant)
 
-5) Software
+4) Software
 - Software/Toolkit: Visual Studio Code 1.39.0, Jupyter Notebook 6.0.3, SQLAlchemy 1.39,PostgresSQL
 - Languages: Python 3.7
 - Machine Learning Libraries: SciKitLearn
