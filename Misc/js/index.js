@@ -32,6 +32,6 @@
 
 
         var footerhtml = '<span class="text">© 2020 Copyright:\
-     <a href="index.html" style="color:silver"><img src ="../Misc/images/m_legs.svg" height="20px" width="20px" alt="rats">Ladies Night</a></span>';
+     <a href="index.html" style="color:silver"><img src ="Misc/images/m_legs.svg" height="20px" width="20px" alt="rats">Ladies Night</a></span>';
 
 document.getElementById('footer').innerHTML = footerhtml;
