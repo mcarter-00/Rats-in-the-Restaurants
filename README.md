@@ -5,20 +5,21 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 
 ## Resources
 1) Los Angeles County Open Source
-- [Inspections:] (https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-INSPECTIO/6ni6-h5kp)
-- [Violations:] (https://data.lacounty.gov/Health/)LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-VIOLATION/8jyd-4pv9
-- [Health Community:](https://data.lacounty.gov/Health/Los-Angeles-County-City-and-Community-Health-Profi/capb-kusk)
+- [Inspections Dataset](https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-INSPECTIO/6ni6-h5kp)
+- [Violations Dataset](https://data.lacounty.gov/Health/)LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-VIOLATION/8jyd-4pv9
+- [Health Community Dataset](https://data.lacounty.gov/Health/Los-Angeles-County-City-and-Community-Health-Profi/capb-kusk)
 
 2) Google Slides
-- [Link] (https://docs.google.com/presentation/d/1fONfWnvPUPYfaIGxkxsvcScwwaHlTBpz2CZawL7Ysrw/edit?usp=sharing)
+- [Link](https://docs.google.com/presentation/d/1fONfWnvPUPYfaIGxkxsvcScwwaHlTBpz2CZawL7Ysrw/edit?usp=sharing)
 
 3) Tableau Interactive Map
-- [Link] (https://public.tableau.com/profile/danigio#!/vizhome/Rats_interactivedashboard_2/RestaurantsinLAwithviolations)
+- [Link](https://public.tableau.com/profile/danigio#!/vizhome/Rats_interactivedashboard_2/RestaurantsinLAwithviolations)
 
-4) 
+4) Tableau Dashboard
+- [Link](https://public.tableau.com/profile/esther.kim4056#!/vizhome/Rats-in-the-RestaurantsHealthViolations/HealthViolationsperCity)
 
-3) Software
-- Software/Toolkit: Visual Studio Code 1.39.0, Jupyter Notebook 6.0.3, SQLAlchemy 1.3.9, PostgresSQL
+5) Software
+- Software/Toolkit: Visual Studio Code 1.39.0, Jupyter Notebook 6.0.3, SQLAlchemy 1.39,PostgresSQL
 - Languages: Python 3.7
 - Machine Learning Libraries: SciKitLearn
 
