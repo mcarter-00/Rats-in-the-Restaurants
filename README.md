@@ -6,7 +6,7 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 ## Resources
 1) Los Angeles County Open Source
 - [Inspections Dataset](https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-INSPECTIO/6ni6-h5kp)
-- [Violations Dataset](https://data.lacounty.gov/Health/)LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-VIOLATION/8jyd-4pv9
+- [Violations Dataset](https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-VIOLATION/8jyd-4pv9)
 - [Health Community Dataset](https://data.lacounty.gov/Health/Los-Angeles-County-City-and-Community-Health-Profi/capb-kusk)
 
 2) Google Slides
