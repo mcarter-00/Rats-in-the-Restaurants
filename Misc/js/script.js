@@ -4,7 +4,7 @@ var html3 = '<div class="collapse navbar-collapse" id="navbarSupportedContent" d
         <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>\
     </li>\
     <li class="nav-item dropdownB">\
-        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
             Dashboards\
         </a>\
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="right: auto; left: auto;">\
@@ -20,7 +20,7 @@ var html3 = '<div class="collapse navbar-collapse" id="navbarSupportedContent" d
         </div>\
     </li>\
     <li class="nav-item active">\
-        <a class="nav-link" href="Misc/machinelearning.html">Machine Learning </a>\
+        <a class="nav-link" href="../Misc/machinelearning.html">Machine Learning </a>\
     </li>\
     <li class="nav-item active">\
         <a class="nav-link" href="https://github.com/mcarter-00/Rats-in-the-Restaurants">Github Repository </a>\
