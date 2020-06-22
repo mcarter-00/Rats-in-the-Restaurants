@@ -98,15 +98,3 @@ We separated our data into training and testing sets that included the the param
 
 ### Explanation of model choice, including limitations and benefits
 The linear SVC model presented several limitations. Running our model took a couple of hours to complete, and it resulted in a very low accuracy score (about 6%). Upon discussing and re-evaluting our model, we decided on reducing our feature selections to about handful based on the strongest r-values from our linear regression analysis and limiting restaurants to Los Angeles city only. We tested this approach on a random forest model, which still procuded a low accuracy score. We reverted back to keeping all our feature selections and keeping all cities in Los Angeles County. Our random forest classifier included two parameters: n_estimators = 200 and random_state =78. Finally, our random forest model then produced an accuracy score of about 70%. Feature importance was calculated and sorted. It revealed that “LAT”, “LNG”, and “FACILITY_ZIP” were among the top. Although not strong, it still demonstrates an impact.
-
-## Dashboard
-
-Tableau is used for data visualization. 
-1) A dashboard that displays the importance level per health violation, city with most health violation, and grades given to restaurant per health violation from the initial analysis.
-<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Health_violations_per_city.png"> 
-
-2) An interactive dashboard that displays restaurants if selecting restaurant name, grade, size, and/or health violation.
-<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Interaction_dashboard.png"> 
-
-3) A dashboard that represents the importance level per feature from machine learning.
-<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Level_of_importance.png"> 
