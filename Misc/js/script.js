@@ -49,26 +49,3 @@ $(document).ready(function(){
        
         ratRates()
         });
-
-
-     
-        var html2 = '<div class="collapse navbar-collapse" id="navbarSupportedContent" dropdown-menu-right>\
-        <ul class="navbar-nav mr-auto">\
-            <li class="nav-item active">\
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>\
-            </li>\
-            <li class="nav-item dropdownB">\
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
-                    Dashboards\
-                </a>\
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="right: auto; left: auto;">\
-                        <a class="dropdown-item" href="Misc/dashboard1.html">Map (Horizontal)</a>\
-                        <a class="dropdown-item" href="Misc/dashboard2.html">Map (Vertical)</a>\
-                        <a class="dropdown-item" href="Misc/dashboard3.html">Facilities & Inspections</a>\
-                        <a class="dropdown-item" href="Misc/dashboard4.html">Consumption Habits</a>\
-                        <a class="dropdown-item" href="Misc/dashboard5.html">Bad Actors</a>\
-                </div>\
-            </li>\
-        </ul>\
-        </div>';
-        document.getElementById('navMain').innerHTML = html2;
