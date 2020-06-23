@@ -1,19 +1,24 @@
 # Rats in the Restaurants
 
 ## Project Overview
-Health inspections occur for the safety of the public to keep restaurants up to date with health codes. Health violations such as rats found in restaurants is one type of violation code that would lower the grade of the restaurant. This analysis will help determine which restaurants are prone to more health violations, based on location in Los Angeles County.
+Health inspections occur for the safety of the public to keep restaurants up to date with health codes. Health violations such as rats found in restaurants is one type of violation code that would lower the grade of the restaurant. This analysis will help identify different features that can lead restaurants to have health violations based in Los Angeles County.
 
 ## Resources
 1) Los Angeles County Open Source
-- Inspections: https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-INSPECTIO/6ni6-h5kp
-- Violations: https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-VIOLATION/8jyd-4pv9
-- Health Community: https://data.lacounty.gov/Health/Los-Angeles-County-City-and-Community-Health-Profi/capb-kusk
+- [Inspections Dataset](https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-INSPECTIO/6ni6-h5kp)
+- [Violations Dataset](https://data.lacounty.gov/Health/LOS-ANGELES-COUNTY-RESTAURANT-AND-MARKET-VIOLATION/8jyd-4pv9)
+- [Health Community Dataset](https://data.lacounty.gov/Health/Los-Angeles-County-City-and-Community-Health-Profi/capb-kusk)
 
-2) Google Slides
-- https://docs.google.com/presentation/d/1fONfWnvPUPYfaIGxkxsvcScwwaHlTBpz2CZawL7Ysrw/edit?usp=sharing
+2) Google Slides: [Link](https://docs.google.com/presentation/d/1fONfWnvPUPYfaIGxkxsvcScwwaHlTBpz2CZawL7Ysrw/edit?usp=sharing)
 
-3) Software
-- Software/Toolkit: Visual Studio Code 1.39.0, Jupyter Notebook 6.0.3, SQLAlchemy 1.3.9, PostgresSQL
+3) Tableau Dashboard 
+- Interactive Map: [Link](https://public.tableau.com/profile/danigio#!/vizhome/Rats_interactivedashboard_2/RestaurantsinLAwithviolations)
+- Machine Learning Dashboard that displays the importance level per feature: [Link](https://public.tableau.com/profile/danigio#!/vizhome/Rats_Analysis/Levelofimportance_dash)
+- Initial Analysis Dashboard: [Link](https://public.tableau.com/profile/esther.kim4056#!/vizhome/Rats-in-the-RestaurantsHealthViolations/HealthViolationsperCity)
+- Health Violation Dashboard: [Link](https://public.tableau.com/profile/julie.al.huneidi#!/vizhome/PUBLISHED_EXPLORE_RATS/Violations_Per_Restaurant)
+
+4) Software
+- Software/Toolkit: Visual Studio Code 1.39.0, Jupyter Notebook 6.0.3, SQLAlchemy 1.39,PostgreSQL
 - Languages: Python 3.7
 - Machine Learning Libraries: SciKitLearn
 
@@ -93,15 +98,3 @@ We separated our data into training and testing sets that included the the param
 
 ### Explanation of model choice, including limitations and benefits
 The linear SVC model presented several limitations. Running our model took a couple of hours to complete, and it resulted in a very low accuracy score (about 6%). Upon discussing and re-evaluting our model, we decided on reducing our feature selections to about handful based on the strongest r-values from our linear regression analysis and limiting restaurants to Los Angeles city only. We tested this approach on a random forest model, which still procuded a low accuracy score. We reverted back to keeping all our feature selections and keeping all cities in Los Angeles County. Our random forest classifier included two parameters: n_estimators = 200 and random_state =78. Finally, our random forest model then produced an accuracy score of about 70%. Feature importance was calculated and sorted. It revealed that “LAT”, “LNG”, and “FACILITY_ZIP” were among the top. Although not strong, it still demonstrates an impact.
-
-## Dashboard
-
-Tableau is used for data visualization. 
-1) A dashboard that displays the importance level per health violation, city with most health violation, and grades given to restaurant per health violation from the initial analysis.
-<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Health_violations_per_city.png"> 
-
-2) An interactive dashboard that displays restaurants if selecting restaurant name, grade, size, and/or health violation.
-<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Interaction_dashboard.png"> 
-
-3) A dashboard that represents the importance level per feature from machine learning.
-<img width=“150” alt=“” src="https://github.com/mcarter-00/Rats-in-the-Restaurants/blob/master/Data_Visualization/Dashboard%20prints/Level_of_importance.png"> 
