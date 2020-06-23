@@ -11,7 +11,7 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 
 2) Google Slides: [Link](https://docs.google.com/presentation/d/1fONfWnvPUPYfaIGxkxsvcScwwaHlTBpz2CZawL7Ysrw/edit?usp=sharing)
 
-3) FINAL WEB APP [Link](https://mcarter-00.github.io/Rats-in-the-Restaurants)
+3) FINAL WEB APP: [Link](https://mcarter-00.github.io/Rats-in-the-Restaurants)
 
 4) Tableau Dashboard 
 - Interactive Map: [Link](https://public.tableau.com/profile/danigio#!/vizhome/Rats_interactivedashboard_2/RestaurantsinLAwithviolations)
