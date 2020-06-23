@@ -1,3 +1,5 @@
 # Ignore my config file
 config.py
 config2.py
+bin
+debug

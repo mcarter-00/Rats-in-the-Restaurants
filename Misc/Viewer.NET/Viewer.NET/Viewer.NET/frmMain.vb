@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System.Collections.Generic
 
+
 Public Class frmMain
 
     Dim sListColumns As List(Of String) = New List(Of String)
@@ -151,12 +152,59 @@ Public Class frmMain
         End Try
     End Sub
 
+    Private Sub cmdConvertCSVtoJSON_Click(sender As Object, e As EventArgs) Handles cmdConvertCSVtoJSON.Click
+        ConvertCSVtoJSON(Me.txtFileData.Text)
+    End Sub
 End Class
 
 Module Functions
 
     Dim sData() As String
     Dim sColumn() As String
+
+    Public Sub ConvertCSVtoJSON(ByVal sFileCSV As String)
+        '        var csv = New List < String[]>(); // Or, List<YourClass>
+        'var lines = System.IO.File.ReadAllLines(@"C:\file.txt");
+        'foreach(String line In lines)
+        '        csv.Add(line.Split(',')); // or, populate YourClass          
+        'String json = New 
+
+
+        Try
+            Dim sData = System.IO.File.ReadAllLines(sFileCSV)
+            Dim sListRows = New List(Of String())
+
+            For Each sRow As String In sData
+                sListRows.Add(sRow.Split(","))
+            Next
+
+            'Dim properties = sData(0).Split(",")
+
+            'Dim listObjResult = New List(Of Dictionary(Of String, String))()
+
+            'For i = 1 To sData.Count - 1
+            '    Dim objResult = New Dictionary(Of String, String)()
+            '    For j = 0 To properties.Length - 1
+            '        objResult.Add(properties(j), sListRows(i)(j))
+            '    Next
+            '    listObjResult.Add(objResult)
+            'Next
+
+
+            Dim sJson = New System.Web.Script.Serialization.JavaScriptSerializer().Serialize(sListRows)
+
+            'Using LVStream As New IO.StreamWriter(sFileCSV.Replace(".csv", ".json"))
+
+            '    For Each sRow As String In sJson
+            '        LVStream.WriteLine(sRow)
+            '    Next
+
+            'End Using
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
 
     Public Function CalcMedian1D(ByVal d1DArray() As Double) As Double
         'Created. v1.3.0
