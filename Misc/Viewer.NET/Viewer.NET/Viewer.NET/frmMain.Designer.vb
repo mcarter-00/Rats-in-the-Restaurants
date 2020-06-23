@@ -34,6 +34,7 @@ Partial Class frmMain
         Me.cmdReadData = New System.Windows.Forms.Button()
         Me.lstSummaryView = New System.Windows.Forms.ListView()
         Me.lstDataView = New System.Windows.Forms.ListView()
+        Me.cmdConvertCSVtoJSON = New System.Windows.Forms.Button()
         Me.grpTool.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,6 +42,7 @@ Partial Class frmMain
         '
         Me.grpTool.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.grpTool.Controls.Add(Me.cmdConvertCSVtoJSON)
         Me.grpTool.Controls.Add(Me.chkTable)
         Me.grpTool.Controls.Add(Me.txtTarget)
         Me.grpTool.Controls.Add(Me.cmdWriteDataListView)
@@ -170,6 +172,15 @@ Partial Class frmMain
         Me.lstDataView.UseCompatibleStateImageBehavior = False
         Me.lstDataView.View = System.Windows.Forms.View.Details
         '
+        'cmdConvertCSVtoJSON
+        '
+        Me.cmdConvertCSVtoJSON.Location = New System.Drawing.Point(17, 343)
+        Me.cmdConvertCSVtoJSON.Name = "cmdConvertCSVtoJSON"
+        Me.cmdConvertCSVtoJSON.Size = New System.Drawing.Size(142, 23)
+        Me.cmdConvertCSVtoJSON.TabIndex = 4
+        Me.cmdConvertCSVtoJSON.Text = "Convert CSV to JSON"
+        Me.cmdConvertCSVtoJSON.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -198,4 +209,5 @@ Partial Class frmMain
     Friend WithEvents txtTarget As TextBox
     Friend WithEvents chkTable As CheckBox
     Friend WithEvents lstDataView As ListView
+    Friend WithEvents cmdConvertCSVtoJSON As Button
 End Class
