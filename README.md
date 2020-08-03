@@ -18,6 +18,7 @@ Health inspections occur for the safety of the public to keep restaurants up to 
 - Daniela's Interactive Map: [Link](https://public.tableau.com/profile/danigio#!/vizhome/Rats_interactivedashboard_2/RestaurantsinLAwithviolations)
 - Daniela's Machine Learning Dashboard that displays the importance level per feature: [Link](https://public.tableau.com/profile/danigio#!/vizhome/Rats_Analysis/Levelofimportance_dash)
 - Julie's Health Violation Dashboard: [Link](https://public.tableau.com/profile/julie.al.huneidi#!/vizhome/PUBLISHED_EXPLORE_RATS/Violations_Per_Restaurant)
+- Maria's Health Violation Dashboard: [Link](https://public.tableau.com/views/LA_restaurants/ViolationsbyRiskandGrade?:language=en&:display_count=y&:origin=viz_share_link)
 
 5) Software
 - Software/Toolkit: Visual Studio Code 1.39.0, Jupyter Notebook 6.0.3, SQLAlchemy 1.39,PostgreSQL
